@@ -1,21 +1,27 @@
-# PubMed Agentic RAG for Scientific & Medical Queries
+# MedAgent RAG: Scientific Literature Query Assistant
 
-This repository provides an **Agentic Retrieval-Augmented Generation (RAG)** pipeline designed to answer scientific and medical questions by retrieving relevant **PubMed abstracts** and combining them with large language model reasoning. It leverages **DeepSeek R1 distilled models** for accurate, context-aware responses.
-
-The application includes a **Streamlit-based interactive interface** where users can query PubMed literature in real time, explore retrieved abstracts, and receive synthesized insights.
-
----
-
-## 🚀 Features
-
-- 🔎 **Agentic RAG pipeline** – retrieves PubMed abstracts and integrates them into model reasoning  
-- 🧠 **Supports multiple DeepSeek R1 models** – choose between different model sizes for speed vs. accuracy  
-- 📑 **Cites PubMed abstracts** – see which studies were used to generate answers  
-- 🎛️ **Interactive Streamlit UI** – simple interface for entering queries, exploring results, and switching models  
-- ⚡ **Automatic model downloads** – first-time use will fetch selected models automatically  
+This project provides an advanced, AI-powered Retrieval-Augmented Generation (RAG) workflow dedicated to answering complex biomedical and scientific questions. It functions by intelligently retrieving relevant PubMed abstracts and grounding the responses with powerful reasoning from DeepSeek R1 distilled models to ensure reliability and context-awareness.
+The application features an intuitive Streamlit dashboard where users can interactively query the medical literature, review the retrieved sources, and instantly receive synthesized, evidence-backed insights.
 
 ---
-## Setup
+
+## 🌟 Key Features
+-**Intelligent Literature Retrieval:** A Smart RAG pipeline fetches necessary PubMed abstracts and integrates them into the model's reasoning process.
+
+- **Flexible Reasoning Models:** Supports multiple DeepSeek R1 distilled variants, allowing users to choose between models optimized for speed or precision.
+
+- **Evidence-Backed Answers:** Every synthesized response is linked and cites the PubMed abstracts used for verification and context.
+
+- **Interactive Streamlit Dashboard:** Provides a simple interface for entering queries, exploring retrieved documents, and selecting the preferred model.
+
+-  **Seamless Model Setup:** Required models are downloaded automatically upon the application's first launch.
+
+-----
+
+--
+## ⚙️ Installation & Usage
+- Step 1: Set Up the Environment
+- Begin by creating a new Python environment using Conda:
 
 ### Step 1: Create a Conda Environment
 
@@ -39,7 +45,7 @@ pip install -r requirements.txt
 Start the Streamlit application with:
 
 ```bash
-streamlit run agentic_rag_streamlit_app.py
+streamlit run MedAgent_rag_app.py
 ```
 
 > **Note:** On the first run, the selected models will be automatically downloaded.
